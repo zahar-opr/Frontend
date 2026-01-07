@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая веб-страница</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>МойСайт</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> Обо мне</a></li>
+                <li><a href="#skills"><i class="fas fa-cogs"></i> Навыки</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <!-- Герой-секция -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="https://via.placeholder.com/150" alt="Мое фото" class="avatar">
+                <h1>Привет, я начинающий веб-разработчик!</h1>
+                <p>Изучаю HTML, CSS и JavaScript</p>
+                <button class="cta-button" onclick="showMessage()">Нажми меня!</button>
+            </div>
+        </section>
+
+        <!-- Обо мне -->
+        <section id="about" class="section">
+            <h2><i class="fas fa-user"></i> Обо мне</h2>
+            <div class="about-content">
+                <p>Меня зовут Захар, и я начал свой путь в веб-разработке. Это моя первая HTML страница!</p>
+                <div class="card">
+                    <h3>Мои цели:</h3>
+                    <ul>
+                        <li>Освоить HTML и CSS</li>
+                        <li>Научиться создавать адаптивные сайты</li>
+                        <li>Изучить JavaScript</li>
+                        <li>Создать свой первый проект</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Навыки -->
+        <section id="skills" class="section">
+            <h2><i class="fas fa-cogs"></i> Мои навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5 html-icon"></i>
+                    <h3>HTML</h3>
+                    <p>Основы разметки</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt css-icon"></i>
+                    <h3>CSS</h3>
+                    <p>Стилизация страниц</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fab fa-js js-icon"></i>
+                    <h3>JavaScript</h3>
+                    <p>Основы программирования</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <i class="fab fa-python python-icon"></i>
+                    <h3>Python</h3>
+                    <p>Бэкенд разработка</p>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contact" class="section">
+            <h2><i class="fas fa-envelope"></i> Контакты</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Отправить
+                    </button>
+                </form>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i> Telegram</a>
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i> VK</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Моя первая веб-страница. Все права защищены.</p>
+            <p>Создано с ALTI и HTML</p>
+        </div>
+    </footer>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
